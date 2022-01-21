@@ -6,19 +6,30 @@ body {
 .game-intro {
   float: left;
   padding: 0% 10%;
+  display: flex;
+  flex-direction: row;
 }
 
 .game-intro p {
   font-size: 18px;
-  font-family: "Verdana"
+  font-family: "Verdana";
+}
+
+#start-game-wrapper {
+  margin-right: 20px;
 }
 
 .logo-img {
   width: 350px;
+  display: inline;
 }
 
 .arrows-img {
   width: 150px;
+}
+
+.road-img {
+  display: inline;
 }
 
 body button {
@@ -35,4 +46,14 @@ body button {
 #game-board {
     float: left;
     padding: 20px 0px;
+}
+
+#score-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#game-over {
+  color:red;
 }

@@ -8,16 +8,24 @@
     <title>Race Car</title>
   </head>
   <body>
-    <div class="game-intro">
-      <img src="./images/logo.png" alt="" class="logo-img" />
-      <br />
-      <button id="start-button">StartGame</button>
-      <p>Use the left and right arrow to control the car!</p>
-      <img src="./images/arrows.png" alt="" class="arrows-img" />
+    <div class="game-intro row">
+      <div id="start-game-wrapper">
+        <img src="./images/logo.png" alt="" class="logo-img" />
+        <br />
+        <button id="start-button">StartGame</button>
+        <p>Use the left and right arrow to control the car!</p>
+        <div id="score-wrapper">
+          <h2>SCORE:</h2>
+          <h2 id="score-num"></h2>
+        </div>
+        <h1 id="game-over"></h1>
+        <img src="./images/arrows.png" alt="" class="arrows-img" />
+      </div>
+      
     </div>
 
     <div id="game-board">
-      <canvas id="canvas" width="500" height="700"></canvas>
+      <canvas id="c" width="500" height="700"></canvas>
     </div>
 
     <script type="text/javascript" src="js/index.js"></script>
